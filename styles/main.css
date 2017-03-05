@@ -1,0 +1,637 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway');
+html {
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 2.2em;
+}
+
+h4 {
+    font-size: 2.0em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Questrial', georgia, sans-serif;
+    color: #759296;
+}
+
+#logo>a {
+    font-family: 'Quicksand';
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+#logo>a:hover {
+    color: #759296;
+}
+
+p {
+    font-family: 'Railway';
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 65%;
+    color: #384547;
+    margin: 0.5% 0;
+    max-width: 900px;
+}
+
+
+/*End Fonts*/
+
+
+/*Flexbox Layout & Structure*/
+
+h1#logo {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin-left: 10%
+}
+
+header {
+    width: 100%;
+    padding: 2%;
+    margin-top: -2%;
+    margin-bottom: 2.5%;
+    background-color: #FFF;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 100%;
+    background-color: #FFF;
+    padding: 2.5% 0 0 0;
+    margin-top: 2.5%;
+    box-shadow: 0 -10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+address {
+    margin-bottom: 2%;
+}
+
+address>p {
+    width: 100%;
+    text-align: center;
+}
+
+.container, .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.justifyContentCenter, .item {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.alignContentCenter {
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.alignContentSpaceAround {
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+}
+
+.alignItemsCenter {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flexWrapWrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flexDirectionColumn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flexDirectionRow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.justifyContentSpaceBetween {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.justifyContentSpaceAround {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.hide {
+    display: none;
+}
+
+.visibilityNone {
+    visibility: hidden;
+}
+
+.itemDetails {
+    max-width: 650px;
+    width: 75%;
+    margin-top: 2%;
+}
+
+.itemDetails>p {
+    width: 90%;
+}
+
+.itemDetails>h3 {
+    text-align: center;
+}
+
+.itemDetails>img {
+    margin: 1% 0;
+}
+
+.itemDetails>img:hover {
+    -webkit-transform: none;
+    transform: none;
+}
+
+#detailsUp {
+    margin-bottom: 2%;
+}
+
+#categories, section {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+article {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+    margin-top: 1%;
+}
+
+article>h2, article>h3, article>h4, article>h5 {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    line-height: 2em;
+    margin-left: 10%;
+}
+
+
+/*End Flexbox Layout & Stucture*/
+
+
+/*Images*/
+
+section section {
+    max-width: 700px;
+    background: url("../images/wooden-floating-shelves-CROP.png") center center no-repeat;
+    background-size: 100% auto;
+    padding-top: 15%;
+}
+
+#categories {
+    background: url("../images/wooden-floating-shelves-CROP.png") center center no-repeat;
+    background-size: 60% auto;
+}
+
+footer>p {
+    width: 20%;
+}
+
+
+/*End Images*/
+
+#museum {
+    background: url('../images/mccrayCo.jpg') center center no-repeat;
+}
+
+#coffee {
+    background: url('../images/1920s-coffee-shop.jpg') center center no-repeat;
+}
+
+#toaster {
+    background: url('../images/1950s-breakfast.jpg') center center no-repeat;
+}
+
+#stove {
+    background: url('../images/old-stove.jpg') center center no-repeat;
+}
+
+#fridge {
+    background: url('../images/retro-kitchen.jpg') center center no-repeat;
+}
+
+#hairdryer {
+    background: url('../images/hair-dryers.jpg') center center no-repeat;
+}
+
+#fan {
+    background: url('../images/oldfan.jpg') center center no-repeat;
+}
+
+#washingMachine {
+    background: url('../images/laundrymat.jpg') center center no-repeat;
+}
+
+#dryer {
+    background: url('../images/dryers.jpg') center center no-repeat;
+}
+
+#iron {
+    background: url('../images/women_ironing.jpg') center center no-repeat;
+}
+
+.coverImage {
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 5%;
+}
+
+#email {
+    background: url('../images/email_red.png') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+#email:hover {
+    background: url('../images/email_grey.png') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+#twitter {
+    background: url('../images/twitter_red.png') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+#twitter:hover {
+    background: url('../images/twitter_grey.png') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+#facebook {
+    background: url('../images/facebook_red.png') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0 8%;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+#facebook:hover {
+    background: url('../images/facebook_grey.png') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0 8%;
+}
+
+.category {
+    padding: 5% 0;
+}
+
+.category>a {
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+.category>a:hover {
+    color: #759296;
+}
+
+
+/*Structure*/
+
+.items, #categories {
+    width: 100%;
+}
+
+.title {
+    margin-top: 8%;
+    padding: 2% 0;
+}
+
+.subtitle {
+    margin-bottom: -11%;
+}
+
+.item {
+    width: 30%;
+    padding: 5% 0;
+    margin-bottom: 7%;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.item:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+img:nth-child(4), img:nth-child(5), img:nth-child(6) {
+    margin-bottom: 20%;
+}
+
+section>article {
+    margin-top: -8%;
+}
+
+
+/*End Structure*/
+
+
+/*Colors and Transitions*/
+
+input[type=button] {
+    background-color: #B22222;
+    border: none;
+    color: #759296;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    margin: 0 2%;
+    margin-bottom: -7%;
+}
+
+input[type=button]:hover {
+    background-color: #759296;
+    color: #B22222;
+}
+
+a {
+    text-decoration: none;
+    color: #B22222;
+}
+
+
+/*End Colors and Transitions*/
+
+
+/*Images*/
+
+body {
+    background: -webkit-linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url('../images/whiteBrick.jpg');
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url('../images/whiteBrick.jpg');
+    margin-top: 2%;
+}
+
+.placeholderItem {
+    background-image: url('../images/placeholderItem.png');
+}
+
+.itemImage {
+    background: center center no-repeat;
+    width: 20%;
+    height: 20%;
+    padding: 0 5%;
+    background-size: contain;
+}
+
+
+/*End Images*/
+
+@media screen and (max-width: 1150px) {
+    .category {
+        margin-bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .category {
+        margin-bottom: 0%;
+    }
+    #categories>h1:nth-child(3) {
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 10pt;
+    }
+    .itemDetails {
+        width: 90%;
+    }
+    footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    footer>p {
+        width: 54%;
+    }
+    p {
+        font-size: 1.3em;
+        width: 80%;
+    }
+    article>h2, article>h3, article>h4, article>h5 {
+        margin-left: 5%;
+    }
+    #museum {
+        background: url('../images/tablet/mccrayCo.jpg') center center no-repeat;
+    }
+    #coffee {
+        background: url('../images/tablet/1920s-coffee-shop.jpg') center center no-repeat;
+    }
+    #toaster {
+        background: url('../images/tablet/1950s-breakfast.jpg') center center no-repeat;
+    }
+    #stove {
+        background: url('../images/tablet/old-stove.jpg') center center no-repeat;
+    }
+    #fridge {
+        background: url('../images/tablet/retro-kitchen.jpg') center center no-repeat;
+    }
+    #hairdryer {
+        background: url('../images/tablet/hair-dryers.jpg') center center no-repeat;
+    }
+    #fan {
+        background: url('../images/tablet/oldfan.jpg') center center no-repeat;
+    }
+    #washingMachine {
+        background: url('../images/tablet/laundrymat.jpg') center center no-repeat;
+    }
+    #dryer {
+        background: url('../images/tablet/dryers.jpg') center center no-repeat;
+    }
+    #iron {
+        background: url('../images/tablet/women_ironing.jpg') center center no-repeat;
+    }
+    .coverImage {
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .category {
+        margin-bottom: -2%;
+    }
+    #categories>h1:nth-child(3) {
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #categories>h1 {
+        font-size: 2.4em;
+    }
+    .itemDetails {
+        width: 100%;
+    }
+    .itemDetails>p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #categories>h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    input[type=button] {
+        padding: 10px;
+    }
+    #categories>h1 {
+        margin-bottom: 2%;
+    }
+    img:nth-child(1), img:nth-child(2) {
+        margin: 5%;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+    img:nth-child(3), img:nth-child(4) {
+        margin: 5%;
+        margin-bottom: -5%;
+    }
+    #categories {
+        background-size: 80% auto;
+    }
+    img:nth-child(5), img:nth-child(6) {
+        margin-bottom: 25%;
+    }
+    .itemImage {
+        width: 20%;
+        margin: 10%;
+    }
+    .placeholder {
+        display: none;
+    }
+    article>h2, article>h3, article>h4, article>h5 {
+        margin-left: 0;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+    p {
+        width: 90%;
+        margin: 2% 0;
+    }
+    .itemDetails {
+        width: 90%;
+    }
+    .itemDetails>img {
+        margin-bottom: 3%;
+    }
+    #museum {
+        background: url('../images/mobile/mccrayCo.jpg') center center no-repeat;
+    }
+    #coffee {
+        background: url('../images/mobile/1920s-coffee-shop.jpg') center center no-repeat;
+    }
+    #toaster {
+        background: url('../images/mobile/1950s-breakfast.jpg') center center no-repeat;
+    }
+    #stove {
+        background: url('../images/mobile/old-stove.jpg') center center no-repeat;
+    }
+    #fridge {
+        background: url('../images/mobile/retro-kitchen.jpg') center center no-repeat;
+    }
+    #hairdryer {
+        background: url('../images/mobile/hair-dryers.jpg') center center no-repeat;
+    }
+    #fan {
+        background: url('../images/mobile/oldfan.jpg') center center no-repeat;
+    }
+    #washingMachine {
+        background: url('../images/mobile/laundrymat.jpg') center center no-repeat;
+    }
+    #dryer {
+        background: url('../images/mobile/dryers.jpg') center center no-repeat;
+    }
+    #iron {
+        background: url('../images/mobile/women_ironing.jpg') center center no-repeat;
+    }
+    .coverImage {
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+        margin-top: 5%;
+    }
+}
