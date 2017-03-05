@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Demo</title>
+      <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+      <link rel="stylesheet" type="text/css" href="styles/main.css" />
+      <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body class="container justifyContentCenter alignItemsCenter">
+      <div id="categories" class="container justifyContentCenter alignItemsCenter flexDirectionColumn">
+          <h1 class="category"><a href="#" onclick="toggleVisibility('category1');">Kitchen Appliances</a></h1>
+          <h1 class="category"><a href="#" onclick="toggleVisibility('category2');">Laundry Appliances</a></h1>
+          <h1 class="category"><a href="#" onclick="toggleVisibility('category3');">Bathroom Appliances</a></h1>
+      </div>
+      <section id="category1" class="hide container justifyContentCenter alignItemsCenter flexDirectionColumn">
+          <!--<a href="#" onclick="toggleVisibility('category1')">^</a>-->
+          <input type="button" name="up" onclick="toggleVisibility('category1')" value="&#x25b2;" />
+          <h1 class="title">Kitchen Appliances</h1>
+          <div id="subcategory1Category1" class="hide container alignItemsCenter flexDirectionRow">
+              <input type="button" name="back" class="visibilityNone" value="&#x25c0;" />
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <h2 class="subtitle">Subcategory 1</h2>
+                  <section class="items container justifyContentCenter alignItemsCenter flexWrapWrap">
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                  </section>
+              </div>
+              <input type="button" name="forward" onclick="toggleSubcategoryVisibility('subcategory1Category1','subcategory2Category1')" value="&#x25ba;" />
+          </div>
+          <div id="subcategory2Category1" class="container alignItemsCenter flexDirectionRow">
+              <input type="button" name="back" onclick="toggleSubcategoryVisibility('subcategory2Category1','subcategory1Category1')" value="&#x25c0;" />
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <h2 class="subtitle">Coffee Makers</h2>
+                  <section class="items container justifyContentSpaceAround flexWrapWrap alignContentSpaceAround">
+                      <!-- onclick="toggleSubcategoryVisibility('dripCoffeeMaker','subcategory2Category1') -->
+                      <img src="images/drip_coffee_maker.png" class="item itemImage" />
+                      <img src="images/electric-coffee-maker.png" class="item itemImage" />
+                      <img src="images/glass_drip_coffee_maker.png" class="item itemImage" />
+                      <img src="images/lever-espresso-machine.png" class="item itemImage" />
+                      <img src="images/metal-coffee-maker.png" class="item itemImage" />
+                      <img src="images/Moka_Express.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                  </section>
+              </div>
+              <input type="button" name="forward" onclick="toggleSubcategoryVisibility('subcategory2Category1','subcategory3Category1')" value="&#x25ba;" />
+          </div>
+          <div id="subcategory3Category1" class="hide container alignItemsCenter flexDirectionRow">
+              <input type="button" name="back" onclick="toggleSubcategoryVisibility('subcategory3Category1','subcategory2Category1')" value="&#x25c0;" />
+              <div class="container alignItemsCenter flexDirectionColumn">
+                  <h2 class="subtitle">Subcategory 3</h2>
+                  <section class="items container justifyContentSpaceAround flexWrapWrap alignContentSpaceAround">
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/exampleItem.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                      <img src="images/placeholderItem.png" class="item itemImage" />
+                  </section>
+              </div>
+              <input type="button" name="back" class="visibilityNone" value="&#x25c0;" />
+          </div>
+      </section>
+      <section id="category2" class="hide container justifyContentCenter alignItemsCenter flexDirectionColumn">
+          <input type="button" name="up" onclick="toggleVisibility('category2')" value="&#x25b2;" />
+          <h1 class="title">Laundry</h1>
+          <section class="items container justifyContentCenter alignItemsCenter flexWrapWrap">
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/placeholderItem.png" class="item itemImage" />
+              <img src="images/placeholderItem.png" class="item itemImage" />
+              <img src="images/placeholderItem.png" class="item itemImage" />
+          </section>
+      </section>
+      <section id="category3" class="hide container justifyContentCenter alignItemsCenter flexDirectionColumn">
+          <input type="button" name="up" onclick="toggleVisibility('category3')" value="&#x25b2;" />
+          <h1 class="title">Bathroom Appliances</h1>
+          <section class="items container justifyContentCenter alignItemsCenter flexWrapWrap">
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/exampleItem.png" class="item itemImage" />
+              <img src="images/placeholderItem.png" class="item itemImage" />
+              <img src="images/placeholderItem.png" class="item itemImage" />
+              <img src="images/placeholderItem.png" class="item itemImage" />
+          </section>
+      </section>
+      <section id="dripCoffeeMaker" class="hide container justifyContentCenter">
+          <input type="button" name="up" onclick="toggleSubcategoryVisibility('dripCoffeeMaker','subcategory2Category1')" value="&#x25b2;" />
+          <h3>Drip Coffee Maker</h3>
+          <img src="images/drip_coffee_maker.png" class="item itemImage" />
+      </section>
+  </body>
+</html>
