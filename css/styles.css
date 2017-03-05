@@ -1,0 +1,1295 @@
+@font-face {
+    font-family: 'glacial_indifferenceregular';
+    src: url('fonts/glacialindifference-regular-webfont.woff2') format('woff2'),
+         url('fonts/glacialindifference-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebasregular';
+    src: url('fonts/bebas-webfont.woff2') format('woff2'),
+         url('fonts/bebas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bpdotsregular';
+    src: url('fonts/bpdots-webfont.woff2') format('woff2'),
+         url('fonts/bpdots-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Fonts*/
+h1, h2, h3, h4, h5, h6{
+	font-family: bebasregular, impact, serif;
+	word-spacing: 0.1em;
+}
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2.625em;
+}
+h3{
+	font-size: 2.375em;
+}
+h4{
+	font-size: 2.125em;
+}
+h5{
+	font-size: 1.875em;
+}
+h6{
+	font-size: 1.625em;
+}
+nav > ul > li, a{
+	font-family: bpdotsregular, "Century Gothic", serif;
+	font-size: 1.625em;
+	color: #60B7FF;
+	text-decoration: none;
+}
+footer a {
+	font-size: 1em;
+}
+p{
+	font-family: glacial_indifferenceregular, georgia, "Times New Roman", serif;
+	font-size: 1em;
+}
+/*End Fonts*/
+/*Structure*/
+.container{
+	
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+	/*Triangles*/
+		/*Black*/
+.triangle-up-left-black {
+    width: 0;
+    height: 0;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    overflow: hidden;
+}
+.triangle-up-left-black:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #000;
+}
+.triangle-down-right-black {
+    width: 15%;
+    height: 0;
+    padding-top: 15%;
+    overflow: hidden;
+}
+.triangle-down-right-black:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    border-top: 500px solid transparent;
+    border-right: 500px solid #000;
+}
+.triangle-up-right-black {
+    width: 0;
+    height: 0;
+    padding-left: 15%;
+    padding-top: 15%;
+    overflow: hidden;
+}
+.triangle-up-right-black:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-500px;
+    margin-top:-500px;
+    border-left: 500px solid transparent;
+    border-top: 500px solid #000;
+}
+.triangle-down-left-black {
+    width: 15%;
+    height: 0;
+    padding-bottom: 15%;
+    overflow: hidden;
+}
+.triangle-down-left-black:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #000;
+}
+		/*Purple*/
+.triangle-up-left-purple {
+    width: 0;
+    height: 0;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    overflow: hidden;
+}
+.triangle-up-left-purple:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #CB80FB;
+}
+		/*Orange*/
+.triangle-down-right-orange {
+    width: 15%;
+    height: 0;
+    padding-top: 15%;
+    overflow: hidden;
+}
+.triangle-down-right-orange:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    border-top: 500px solid transparent;
+    border-right: 500px solid #FC7B1D;
+}
+		/*White*/
+.triangle-up-left-orange {
+    width: 0;
+    height: 0;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    overflow: hidden;
+}
+.triangle-up-left-orange:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #FC7B1D;
+}
+
+		/*Pink*/
+.triangle-down-right-pink {
+    width: 15%;
+    height: 0;
+    padding-top: 15%;
+    overflow: hidden;
+}
+.triangle-down-right-pink:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    border-top: 500px solid transparent;
+    border-right: 500px solid #FB609E;
+}
+		/*White*/
+.triangle-up-left-white {
+    width: 0;
+    height: 0;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    overflow: hidden;
+}
+.triangle-up-left-white:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #FFF;
+}
+.triangle-down-right-white {
+    width: 15%;
+    height: 0;
+    padding-top: 15%;
+    overflow: hidden;
+}
+.triangle-down-right-white:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    border-top: 500px solid transparent;
+    border-right: 500px solid #FFF;
+}
+		/*Blue*/
+.triangle-up-left-blue {
+    width: 0;
+    height: 0;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    overflow: hidden;
+}
+.triangle-up-left-blue:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #60B7FF;
+}
+.triangle-down-right-blue {
+    width: 15%;
+    height: 0;
+    padding-top: 15%;
+    overflow: hidden;
+}
+.triangle-down-right-blue:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    border-top: 500px solid transparent;
+    border-right: 500px solid #60B7FF;
+}
+		/*Orange*/
+.triangle-up-left-orange {
+    width: 0;
+    height: 0;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    overflow: hidden;
+}
+.triangle-up-left-orange:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -500px;
+    border-bottom: 500px solid transparent;
+    border-left: 500px solid #FC7B1D;
+}
+.triangle-down-right-orange {
+    width: 15%;
+    height: 0;
+    padding-top: 15%;
+    overflow: hidden;
+}
+.triangle-down-right-orange:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    border-top: 500px solid transparent;
+    border-right: 500px solid #FC7B1D;
+}
+	/*End Triangles*/
+.mastheadLED{
+	justify-content: center;
+	align-items: center;
+}
+.mastheadLED h1{
+	font-family: bpdotsregular, "Century Gothic", serif;
+	font-size: 10em;
+	color: #FFF;	
+}
+.subheadings{
+	margin-top: -12%;
+	margin-bottom: 2%;
+	justify-content: center;
+}
+.images{
+	padding: 5%;
+	justify-content: space-around;
+}
+.coverHeading{
+	justify-content: space-between;
+	color: #FFF;	
+}
+.contentMargin{
+	margin: 5% 0;
+}
+.section{
+	justify-content: space-between;
+}
+.article{
+	flex-direction: column;
+}
+.paragraph{
+	padding: 1%;
+	align-self: center;
+	width: 60%;
+	text-align: left;
+	line-height: 1.5em;
+}
+.introParagraphs{
+	padding: 2% 0;
+	color: #FFF;
+}
+footer{
+	justify-content: space-around;
+	align-items: center;
+}
+.footerNav{
+	justify-content: center;
+	margin: 0 2%;
+}
+footer p{
+	margin: 2% 0;
+}
+footer > div{
+	margin: 1% 0;
+	align-content: center;	
+}
+footer a:hover{
+	color: #FB609E;
+}
+.bottomTriangle{
+	align-self: flex-end;
+}
+.coverImageHeadingCenter{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 2%;
+	align-self: center;
+}
+	/*Experimental Structure: Selectors between these comments contain repeating code. If successful, then I will leave old code due to time constraints*/
+.justifyContentCenter{
+	justify-content: center;
+}
+.alignItemsBaseline{
+	align-items: baseline;
+}
+.paragraphsWithImages{
+	width: 40%;
+}
+.spacearound{
+	justify-content: space-around;
+}
+.alignContent{
+	align-content: center;
+}
+.flexDirectionColumn{
+	flex-direction: column;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.listItem{
+	margin-top: 5%;
+	width: 30%;
+}
+.shortParagraph{
+	width: 40%;
+}
+.column{
+	flex: 1;
+}
+	/*End Experimental Structure*/
+/*End Structure*/
+/*Images*/
+.circular{
+	height: auto;
+	padding-top: 30%;
+	width: 30%;
+	border-radius: 50%;
+}
+	/*Homepage*/
+#ledBridge{
+	background: url('../images/LED-Bridge-Morocco.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#ambiluxPhilips{
+	background: url('../images/Ambilux-living-room.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#kitchenModernLED{
+	background: url('../images/Unique-LED-Lighting-for-Modern-Kitchen.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+	/*Versatility Images*/
+#threeDArtSculpture{
+	background: url('../images/3D-LED-Art-Sculpture.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#childLedWall{
+	background: url('../images/Child-LED-Art-Wall.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#katiePerry{
+	background: url('../images/Katie-Perry-LED_Dress.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#ledBars{
+	background: url('../images/LED-bars.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#ledRing{
+	background: url('../images/LED_Ring.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#ambilightBack{
+	background: url('../images/ambilight-rear-strips.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#ledCube{
+	background: url('../images/LED_Cube-8x8x8.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#ledPainting{
+	background: url('../images/light-sculpture-acrylic-LED.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+	/*Indoor Outdoor Images*/
+#ambientLivingRoom{
+	background: url('../images/residential-led-project.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#uniqueGlassCountertop{
+	background: url('../images/unique-glass-countertops-led-lighting-glass-countertops.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#blackFuturisticKitchen{
+	background: url('../images/black-kitchen-futuristic-led.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#contemporaryCeilingLEDs{
+	background: url('../images/contemporary-led-ceiling-lights-for-hallway.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#illuminatedPool{
+	background: url('../images/illuminated-pool-outdoor-lights-outdoor-lighting.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#outdoorLedLighting{
+	background: url('../images/outdoor-led-lighting.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#stunningGardenLights{
+	background: url('../images/stunning-with-garden-lights.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#ledPottery{
+	background: url('../images/garden-lighting-1.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+	/*Energy and Savings Images*/
+#lightbulbHand{
+	background: url('../images/lightbulb-hand.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#parkingGarage{
+	background: url('../images/LED-parking-garage.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+	/*Safety Images*/
+#firetruck{
+	background: url('../images/Firetruck.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#ambulance{
+	background: url('../images/ambulance.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#safetyVest{
+	background: url('../images/LED-Bike-Safety-Vest.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+#purpleGreenhouseCircle{
+	background: url('../images/led-greenhouse-purple.jpg') no-repeat;
+	background-size: cover;
+	height: auto;
+}
+	/*Cover Images Images*/
+#ledSpheres{
+	background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/LED-spheres.jpg') center center no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+#starlightSteps{
+	background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/stairlightphoto.jpg') center center no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+#gardenAndPool{
+	background: url('../images/garden-and-pool-landscape-lighting-fixtures-outdoor-lights-outdoor-lighting-fixtures-gallery.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#modernChandelier{
+	background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/unique-led-lighting-ideas.jpg') center center no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+#screenWallArt{
+	background: url('../images/LED-Wall-Art.jpg') no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#shoeStore{
+	background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/LED-lighting-for-retail-shops.jpg') center center no-repeat;
+	background-size: cover;
+	height: 500px;
+	
+}
+#hangingBulbs{
+	background: url('../images/Generic-LED-light-bulb.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#bwStorefront{
+	background: url('../images/b-n-w-retail-led.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#emptyStorehouse{
+	background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/light-color-storage.jpg') center center no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+#purpleGreenhouse{
+	background: url('../images/led-greenhouse-purple.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#industrialOpenLighting{
+	background: url('../images/industrial-open-lighting.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#colorfulShip{
+	background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/LED-colorful-cruise-ship.jpg') center center no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+#shipOnOcean{
+	background: url('../images/Royal-Princess-at-night.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#ambientPlane{
+	background: url('../images/Hekla-Aurora-Plane-Interior.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#industrialScaffolding{
+	background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/industry-scaffolding-led.jpg') center center no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+#lightbulbsOrange{
+	background: url('../images/LED_Incandesent_Bulbs.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+#blueCeilingLights{
+	background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/led-ceiling-ambient.jpg') center center no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+#policeCar{
+	background: url('../images/LED-Police-Cruiser.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;	
+}
+#sunset{
+	background: url('../images/sun-over-water.jpg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+	/*List Icons*/
+#wrench{
+	background: url('../images/wrench-Orange.png') no-repeat;
+}
+#power{
+	background: url('../images/Power_Symbol-Orange.png') no-repeat;
+}
+#clock{
+	background: url('../images/clock-orange.png') no-repeat;
+}
+#bulb{
+	background: url('../images/Happy_LED-Orange.png') no-repeat;
+}
+#thermomiter{
+	background: url('../images/thermomiter-blue.png') no-repeat;
+}
+#sunglasses{
+	background: url('../images/sunglasses-blue.png') no-repeat;
+}
+#sun{
+	background: url('../images/sun-blue.png') no-repeat;
+}
+#rain{
+	background: url('../images/rain-blue.png') no-repeat;
+}
+#moon{
+	background: url('../images/moon-blue.png') no-repeat;
+}
+#led{
+	background: url('../images/Icon-LED_Circle-Header.png') no-repeat;
+}
+#tv{
+	background: url('../images/Icon-TV-Black.png') no-repeat;
+}
+.icon{
+	width: 8%;
+	height: auto;
+}
+#listDesignHomepage{
+	list-style-image: url('../images/Icon-TV-Black.png');
+}
+article > p:first-child{
+	padding-top: 5%;
+}
+article > p:last-child{
+	padding-bottom: 5%;
+}
+/*End Images*/
+/*Colors*/
+.turnPink{
+	background-color: #FB609E;
+}
+.turnTextPink{
+	color:  #FB609E;
+}
+.turnPurple{
+	background-color: #CB80FB;
+}
+.turnOrange{
+	background-color: #FC7B1D;
+}
+.turnBlue{
+	background-color: #60B7FF;
+}
+.turnTextBlue{
+	color:  #60B7FF;
+}
+.turnTextWhite{
+	color: #FFF;
+}
+.turnBlack{
+	color: #000;
+}
+nav{
+	background-color: #000;
+}
+.current{
+	color: #FFF;
+}
+footer{
+	background-color: #000;
+	padding: 2%;
+}
+footer p, footer h6{
+	color: #FFF;
+}
+/*End Colors*/
+#navigation {
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+}
+
+nav {
+	margin: 50px 0;
+	background-color: #000;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #000;
+}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#60B7FF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	color: #FB609E;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+/*End Dropdown*/
+/*Media Queries*/
+	/*Tablet Query*/
+@media screen and (max-width: 780px){
+	/*Images*/
+		/*Homepage*/
+	#ledBridge{
+		background: url('../images/tablet/LED-Bridge-Morocco.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ambiluxPhilips{
+		background: url('../images/tablet/Ambilux-living-room.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#kitchenModernLED{
+		background: url('../tablet/Unique-LED-Lighting-for-Modern-Kitchen.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Versatility Images*/
+	#threeDArtSculpture{
+		background: url('../images/tablet/3D-LED-Art-Sculpture.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#childLedWall{
+		background: url('../images/tablet/Child-LED-Art-Wall.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#katiePerry{
+		background: url('../images/tablet/Katie-Perry-LED_Dress.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledBars{
+		background: url('../images/tablet/LED-bars.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledRing{
+		background: url('../images/tablet/LED_Ring.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ambilightBack{
+		background: url('../images/tablet/ambilight-rear-strips.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledCube{
+		background: url('../images/tablet/LED_Cube-8x8x8.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledPainting{
+		background: url('../images/tablet/light-sculpture-acrylic-LED.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Indoor Outdoor Images*/
+	#ambientLivingRoom{
+		background: url('../images/tablet/residential-led-project.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#uniqueGlassCountertop{
+		background: url('../images/tablet/unique-glass-countertops-led-lighting-glass-countertops.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#blackFuturisticKitchen{
+		background: url('../images/tablet/black-kitchen-futuristic-led.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#contemporaryCeilingLEDs{
+		background: url('../images/tablet/contemporary-led-ceiling-lights-for-hallway.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#illuminatedPool{
+		background: url('../images/tablet/illuminated-pool-outdoor-lights-outdoor-lighting.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#outdoorLedLighting{
+		background: url('../images/tablet/outdoor-led-lighting.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#stunningGardenLights{
+		background: url('../images/tablet/stunning-with-garden-lights.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledPottery{
+		background: url('../images/tablet/garden-lighting-1.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Energy and Savings Images*/
+	#lightbulbHand{
+		background: url('../images/tablet/lightbulb-hand.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#parkingGarage{
+		background: url('../images/tablet/LED-parking-garage.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Safety Images*/
+	#firetruck{
+		background: url('../images/tablet/Firetruck.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ambulance{
+		background: url('../images/tablet/ambulance.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#safetyVest{
+		background: url('../images/tablet/LED-Bike-Safety-Vest.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Cover Images Images*/
+	#ledSpheres{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/tablet/LED-spheres.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#starlightSteps{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/tablet/stairlightphoto.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#gardenAndPool{
+		background: url('../images/tablet/garden-and-pool-landscape-lighting-fixtures-outdoor-lights-outdoor-lighting-fixtures-gallery.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#modernChandelier{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/tablet/unique-led-lighting-ideas.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#screenWallArt{
+		background: url('../images/tablet/LED-Wall-Art.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#shoeStore{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/tablet/LED-lighting-for-retail-shops.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+		
+	}
+	#hangingBulbs{
+		background: url('../images/tablet/Generic-LED-light-bulb.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#bwStorefront{
+		background: url('../images/tablet/b-n-w-retail-led.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#emptyStorehouse{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/tablet/light-color-storage.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#purpleGreenhouse{
+		background: url('../images/tablet/led-greenhouse-purple.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#industrialOpenLighting{
+		background: url('../images/tablet/industrial-open-lighting.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#colorfulShip{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/tablet/LED-colorful-cruise-ship.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#shipOnOcean{
+		background: url('../images/tablet/Royal-Princess-at-night.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#ambientPlane{
+		background: url('../images/tablet/Hekla-Aurora-Plane-Interior.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#industrialScaffolding{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/tablet/industry-scaffolding-led.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#lightbulbsOrange{
+		background: url('../images/tablet/LED_Incandesent_Bulbs.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#blueCeilingLights{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/tablet/led-ceiling-ambient.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#policeCar{
+		background: url('../images/tablet/LED-Police-Cruiser.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#sunset{
+		background: url('../images/tablet/sun-over-water.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+		/*End Images*/
+	.circular{
+		padding-top: 45%;
+		width: 45%;
+	}
+	.paragraph{
+		width: 80%;
+	}
+	footer{
+		flex-direction: column-reverse;
+		padding: 3%;
+	}
+	.wrap{
+		flex-direction: column;
+		margin-left: 5%;
+		align-items: center;
+	}
+	.listItem{
+		width: 80%;
+	}
+	.subheadings{
+		margin-top: 0;
+	}
+	
+}
+	/*Mobile Query*/
+@media screen and (max-width: 480px){
+		/*Homepage*/
+	#ledBridge{
+		background: url('../images/mobile/LED-Bridge-Morocco.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ambiluxPhilips{
+		background: url('../images/mobile/Ambilux-living-room.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#kitchenModernLED{
+		background: url('../images/mobile/Unique-LED-Lighting-for-Modern-Kitchen.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Versatility Images*/
+	#threeDArtSculpture{
+		background: url('../images/mobile/3D-LED-Art-Sculpture.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#childLedWall{
+		background: url('../images/mobile/Child-LED-Art-Wall.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#katiePerry{
+		background: url('../images/mobile/Katie-Perry-LED_Dress.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledBars{
+		background: url('../images/mobile/LED-bars.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledRing{
+		background: url('../images/mobile/LED_Ring.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ambilightBack{
+		background: url('../images/mobile/ambilight-rear-strips.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledCube{
+		background: url('../images/mobile/LED_Cube-8x8x8.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledPainting{
+		background: url('../images/mobile/light-sculpture-acrylic-LED.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Indoor Outdoor Images*/
+	#ambientLivingRoom{
+		background: url('../images/mobile/residential-led-project.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#uniqueGlassCountertop{
+		background: url('../images/mobile/unique-glass-countertops-led-lighting-glass-countertops.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#blackFuturisticKitchen{
+		background: url('../images/mobile/black-kitchen-futuristic-led.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#contemporaryCeilingLEDs{
+		background: url('../images/mobile/contemporary-led-ceiling-lights-for-hallway.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#illuminatedPool{
+		background: url('../images/mobile/illuminated-pool-outdoor-lights-outdoor-lighting.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#outdoorLedLighting{
+		background: url('../images/mobile/outdoor-led-lighting.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#stunningGardenLights{
+		background: url('../images/mobile/stunning-with-garden-lights.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ledPottery{
+		background: url('../images/mobile/garden-lighting-1.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Energy and Savings Images*/
+	#lightbulbHand{
+		background: url('../images/mobile/lightbulb-hand.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#parkingGarage{
+		background: url('../images/mobile/LED-parking-garage.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Safety Images*/
+	#firetruck{
+		background: url('../images/mobile/Firetruck.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#ambulance{
+		background: url('../images/mobile/ambulance.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+	#safetyVest{
+		background: url('../images/mobile/LED-Bike-Safety-Vest.jpg') no-repeat;
+		background-size: cover;
+		height: auto;
+	}
+		/*Cover Images Images*/
+	#ledSpheres{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/mobile/LED-spheres.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#starlightSteps{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/mobile/stairlightphoto.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#gardenAndPool{
+		background: url('../images/mobile/garden-and-pool-landscape-lighting-fixtures-outdoor-lights-outdoor-lighting-fixtures-gallery.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#modernChandelier{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/mobile/unique-led-lighting-ideas.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#screenWallArt{
+		background: url('../images/mobile/LED-Wall-Art.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#shoeStore{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/mobile/LED-lighting-for-retail-shops.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+		
+	}
+	#hangingBulbs{
+		background: url('../images/mobile/Generic-LED-light-bulb.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#bwStorefront{
+		background: url('../images/mobile/b-n-w-retail-led.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#emptyStorehouse{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/mobile/light-color-storage.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#purpleGreenhouse{
+		background: url('../images/mobile/led-greenhouse-purple.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#industrialOpenLighting{
+		background: url('../images/mobile/industrial-open-lighting.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#colorfulShip{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/mobile/LED-colorful-cruise-ship.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#shipOnOcean{
+		background: url('../images/mobile/Royal-Princess-at-night.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#ambientPlane{
+		background: url('../images/mobile/Hekla-Aurora-Plane-Interior.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#industrialScaffolding{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/mobile/industry-scaffolding-led.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#lightbulbsOrange{
+		background: url('../images/mobile/LED_Incandesent_Bulbs.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#blueCeilingLights{
+		background: linear-gradient(rgba(20,20,20, .4), rgba(20,20,20, .4)),url('../images/mobile/led-ceiling-ambient.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+	}
+	#policeCar{
+		background: url('../images/mobile/LED-Police-Cruiser.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	#sunset{
+		background: url('../images/mobile/sun-over-water.jpg') no-repeat;
+		background-size: cover;
+		height: 400px;
+	}
+	.paragraph{
+		width: 95%;
+	}
+	.images{
+		padding: 5%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.hide{
+		display: none;
+	}
+	.circular{
+		margin: 2% 0;
+		padding-top: 90%;
+		width: 90%;
+	}
+	footer{
+		flex-direction: column-reverse;
+		padding: 3%;
+	}
+	.wrap{
+		flex-direction: column;
+		align-items: center;
+	}
+	.listItem{
+		width: 90%;
+	}
+	.subheadings{
+		padding-left: 20%;
+		margin-top: 0;
+	}
+}
+/*End Media Queries*/
